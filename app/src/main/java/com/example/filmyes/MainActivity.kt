@@ -19,6 +19,14 @@ import com.example.filmyes.ui.theme.FilmYesTheme
 
 class MainActivity : AppCompatActivity() {
 
+    val filmsDataBase = listOf(
+        Film("Ahsoka", R.drawable.ahsoka, "After the fall of the Galactic Empire, former Jedi Knight Ahsoka Tano investigates an emerging threat to a vulnerable galaxy."),
+        Film("Star Wars: Episode 1", R.drawable.episode1, "Two Jedi escape a hostile blockade to find allies and come across a young boy who may bring balance to the Force, but the long dormant Sith resurface to claim their original glory."),
+        Film("Star Wars: Episode 5", R.drawable.episode5, "After the Rebels are overpowered by the Empire, Luke Skywalker begins his Jedi training with Yoda, while his friends are pursued across the galaxy by Darth Vader and bounty hunter Boba Fett."),
+        Film("Star Wars: Episode 6", R.drawable.episode6, "After rescuing Han Solo from Jabba the Hutt, the Rebels attempt to destroy the second Death Star, while Luke struggles to help Darth Vader back from the dark side."),
+        Film("Solo", R.drawable.solo, "Board the Millennium Falcon and journey to a galaxy far, far away in an epic action-adventure that will set the course of one of the Star Wars saga's most unlikely heroes.")
+    )
+
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
